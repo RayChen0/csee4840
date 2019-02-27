@@ -258,7 +258,6 @@ char *MoveString(char toBeMoveString[], int moveLength){
   movedString=&toBeMoveString[moveLength];
   return movedString;
 }
-
 int JudgeClass(char dispCharacter){
   switch (dispCharacter){
     case 0x28:
@@ -267,10 +266,20 @@ int JudgeClass(char dispCharacter){
     case 0x58:
       return 1;
       break;
-      default:
+    case 0x2a:
+      return 2;
+      break;
+    case 0x50:
+      return 3;
+      break;
+    case 0x51:
+      return 4;
+      break;
+    default:
       return 0;
   }
 }
+
 
 
 void *network_thread_f(void *ignored)
