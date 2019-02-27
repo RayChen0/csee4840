@@ -122,5 +122,6 @@
 extern int fbopen(void);
 extern void fbputchar(char, int, int);
 extern void fbputs(const char *, int, int);
+extern void fbputcursor(const char *, int, int);
 extern char keyValue(int, int);
 #endif
