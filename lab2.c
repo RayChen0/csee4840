@@ -201,11 +201,8 @@ int main()
          }
          else if (flag == 4){/* if direction left key is pressed */
            fbputcursor(0x20, currentRow, currentCol+1);
-}
-         
-      }
-
-      if (packet.keycode[0] == 0x29) { /* ESC pressed? */
+         }
+         else if (packet.keycode[0] == 0x29) { /* ESC pressed? */
 	    break;
       }
     }
