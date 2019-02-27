@@ -193,14 +193,14 @@ int main()
 	       }
          else if (flag == 2) {/* if delete is pressed */
            /*Do other function here*/
-           fputchar(0x20, currentRow, currentCol-1);
-	   fputcursor(0x20, currentRow, currentCol-1);
+           fbputchar(0x20, currentRow, currentCol-1);
+	   fbputcursor(0x20, currentRow, currentCol-1);
          }
          else if (flag == 3){/* if direction left key is pressed */
-           fputcursor(0x20, currentRow, currentCol-1);
+           fbputcursor(0x20, currentRow, currentCol-1);
          }
          else if (flag == 4){/* if direction left key is pressed */
-           fputcursor(0x20, currentRow, currentCol+1);
+           fbputcursor(0x20, currentRow, currentCol+1);
 }
          
       }
